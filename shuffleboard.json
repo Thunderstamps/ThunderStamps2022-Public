@@ -1,0 +1,258 @@
+{
+  "tabPane": [
+    {
+      "title": "SmartDashboard",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "SmartDashboard/",
+      "widgetPane": {
+        "gridSize": 64.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 1,
+        "tiles": {
+          "0,0": {
+            "size": [
+              4,
+              2
+            ],
+            "content": {
+              "_type": "ComboBox Chooser",
+              "_source0": "network_table:///SmartDashboard/SendableChooser[0]",
+              "_title": "Auto Routine"
+            }
+          },
+          "15,3": {
+            "size": [
+              4,
+              4
+            ],
+            "content": {
+              "_type": "Grid Layout",
+              "_title": "Winches",
+              "Layout/Number of columns": 2,
+              "Layout/Number of rows": 4,
+              "Layout/Label position": "TOP",
+              "_children": {
+                "0,0": {
+                  "_type": "Number Bar",
+                  "_source0": "network_table:///SmartDashboard/Winch 32 (in.)",
+                  "_title": "Winch CAN32 (in.)",
+                  "Range/Min": 0.0,
+                  "Range/Max": 33.0,
+                  "Range/Center": 0.0,
+                  "Visuals/Num tick marks": 2,
+                  "Visuals/Show text": true
+                },
+                "1,0": {
+                  "_type": "Number Bar",
+                  "_source0": "network_table:///SmartDashboard/Winch 33 (in.)",
+                  "_title": "Winch CAN33 (in.)",
+                  "Range/Min": 0.0,
+                  "Range/Max": 33.0,
+                  "Range/Center": 0.0,
+                  "Visuals/Num tick marks": 2,
+                  "Visuals/Show text": true
+                },
+                "0,1": {
+                  "_type": "Boolean Box",
+                  "_source0": "network_table:///SmartDashboard/Winch 32 @ Top",
+                  "_title": "Winch CAN32 @ Top",
+                  "Colors/Color when true": "#7CFC00FF",
+                  "Colors/Color when false": "#8B0000FF"
+                },
+                "0,2": {
+                  "_type": "Boolean Box",
+                  "_source0": "network_table:///SmartDashboard/Winch 32 Error",
+                  "_title": "Winch CAN32 Error",
+                  "Colors/Color when true": "#FF0000FF",
+                  "Colors/Color when false": "#808080FF"
+                },
+                "1,2": {
+                  "_type": "Boolean Box",
+                  "_source0": "network_table:///SmartDashboard/Winch 33 Error",
+                  "_title": "Winch CAN33 Error",
+                  "Colors/Color when true": "#FF0000FF",
+                  "Colors/Color when false": "#808080FF"
+                },
+                "1,1": {
+                  "_type": "Boolean Box",
+                  "_source0": "network_table:///SmartDashboard/Winch 33 @ Top",
+                  "_title": "Winch CAN33 @ Top",
+                  "Colors/Color when true": "#7CFC00FF",
+                  "Colors/Color when false": "#8B0000FF"
+                }
+              }
+            }
+          },
+          "0,2": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Enable Gyro",
+              "_title": "Enable Gyro"
+            }
+          },
+          "2,2": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Disable Gyro",
+              "_title": "Disable Gyro"
+            }
+          },
+          "4,0": {
+            "size": [
+              11,
+              5
+            ],
+            "content": {
+              "_type": "Camera Stream",
+              "_source0": "camera_server://limelight",
+              "_title": "limelight",
+              "Crosshair/Show crosshair": true,
+              "Crosshair/Crosshair color": "#FFFF00FF",
+              "Controls/Show controls": false,
+              "Controls/Rotation": "NONE",
+              "compression": -1.0,
+              "fps": -1,
+              "imageWidth": -1,
+              "imageHeight": -1
+            }
+          },
+          "15,1": {
+            "size": [
+              3,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/Piston Verified @ Bottom",
+              "_title": "Piston Verified @ Bottom",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "18,0": {
+            "size": [
+              2,
+              2
+            ],
+            "content": {
+              "_type": "Simple Dial",
+              "_source0": "network_table:///SmartDashboard/Vacuum Sensor",
+              "_title": "Vac. (in. Hg)",
+              "Range/Min": 0.0,
+              "Range/Max": 29.92,
+              "Visuals/Show value": true
+            }
+          },
+          "15,2": {
+            "size": [
+              3,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Vacuum and Winch",
+              "_title": "Pull"
+            }
+          },
+          "1,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Y",
+              "_title": "Y"
+            }
+          },
+          "0,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/X",
+              "_title": "X"
+            }
+          },
+          "15,0": {
+            "size": [
+              3,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Verify Piston @ Bottom",
+              "_title": "Verify Piston @ Bottom"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Manual",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 64.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 0,
+        "tiles": {
+          "0,0": {
+            "size": [
+              3,
+              2
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Run Vacuum Pump",
+              "_title": "Vacuum Pump"
+            }
+          },
+          "3,0": {
+            "size": [
+              3,
+              2
+            ],
+            "content": {
+              "_type": "List Layout",
+              "_title": "Grappler",
+              "Layout/Label position": "HIDDEN",
+              "_children": [
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/Unlock Grappler",
+                  "_title": "SmartDashboard/Unlock Grappler"
+                },
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/Lock Grappler",
+                  "_title": "SmartDashboard/Lock Grappler"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "windowGeometry": {
+    "x": -5.0,
+    "y": 0.0,
+    "width": 1612.0,
+    "height": 680.0
+  }
+}
